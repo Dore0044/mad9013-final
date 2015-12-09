@@ -1,0 +1,56 @@
+h1,h2,h3,h4 {
+  font-family: 'Marcellus SC', 'MS Serif', serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.827em;
+  font-weight: 600;
+}
+
+body {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  background-color:
+}
+
+.brand {
+  font-size: 1.999em;
+  font-weight: 600;
+  float: left;
+}
+
+nav a:hover {
+  color: skyblue;
+  text-decoration: none;
+}
+
+.nav-item {
+  margin-left: 30px;
+  font-size: 1.414em;
+}
+
+.desc {
+  text-align: center;
+  font-size: 1.414em;
+}
+
+.container {
+  background-color:
+}
+
+/*Home*/
+.col-md-4 {
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+
+/*Projects*/
+.card-img-top {
+ width: 100%;  
+}
+
+/*Contact*/ 
+form {
+  width: 50%;
+  font-size: 1.414em;
+}
