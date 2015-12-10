@@ -1,3 +1,10 @@
+/*Analogous Colour Scheme:
+  Blue: #0C7EF2
+  Light Blue: #0DC2FC
+  Teal: #00E5E0
+  Sea Green: #0DFCB3
+  Green: #0CF26B*/
+
 h1,h2,h3,h4 {
   font-family: 'Marcellus SC', 'MS Serif', serif;
 }
@@ -6,45 +13,74 @@ h1 {
   text-align: center;
   font-size: 2.827em;
   font-weight: 600;
+  text-shadow: 6px 5px 15px;
 }
 
 body {
   font-family: 'Raleway', 'Arial', sans-serif;
-  background-color:
+  background-color: #0C7EF2;
 }
 
+/*Navbar*/
 .brand {
   font-size: 1.999em;
   font-weight: 600;
   float: left;
+  color: #0CF26B;
 }
 
 nav a:hover {
-  color: skyblue;
+  color: #0DFCB3;
   text-decoration: none;
 }
 
+.navbar-toggler {
+  font-size: 1.999em;
+}
+
 .nav-item {
-  margin-left: 30px;
+  margin-left: 20px;
   font-size: 1.414em;
 }
 
 .desc {
   text-align: center;
   font-size: 1.414em;
+  font-weight: 700;
 }
 
 .container {
-  background-color:
+  background-color: #00E5E0;
+}
+
+.btn-primary {
+  background-color: #0CF26B;
+  border: 1px solid black;
+  color: black;
+  text-shadow: 1px 1px 1px grey; 
 }
 
 /*Home*/
-.col-md-4 {
- border: 1px solid black;
+.row {
+ border: 2px solid black;
  border-collapse: collapse;
 }
 
+.col-md-6 h2 {
+ text-align: center;
+}
+
 /*Projects*/
+.card-deck-wrapper {
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+.card {
+ border: 1px solid black;
+ background-color: #0DC2FC;
+}
+
 .card-img-top {
  width: 100%;  
 }
@@ -53,4 +89,34 @@ nav a:hover {
 form {
   width: 50%;
   font-size: 1.414em;
+  padding-bottom: 15px;
+}
+
+/*Queries*/
+@media screen and (max-width: 34em) {
+  .brand {
+    font-size: 1.414em;
+    margin-right: -5px;
+    left: 5px;
+  }
+    
+  .nav-item {
+    font-size: 1em;
+    margin-right: -5px;
+  }
+}
+
+@media screen and (min-width: 34em) and (max-width: 48em) {
+  
+    
+}
+
+@media screen and (min-width: 48em) and (max-width: 62em) {
+    
+    
+}
+
+@media screen and (min-width: 62em) {
+    
+
 }
