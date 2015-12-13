@@ -1,4 +1,4 @@
-/*Analogous Colour Scheme:
+/*Main Colour Scheme:
   Blue: #0C7EF2
   Light Blue: #0DC2FC
   Teal: #00E5E0
@@ -32,7 +32,16 @@ body {
 .btn-primary:hover {
   background-color: #0DFCB3;
   color: blue;
+  border: 1px solid blue;
 }
+
+.btn-primary:active {
+  background-color: #00E5E0;
+  color: black;
+  border: 1px solid black;
+}
+
+
 
 /*Navbar*/
 .brand {
@@ -44,6 +53,11 @@ body {
 
 nav a:hover {
   color: #0DFCB3;
+  text-decoration: none;
+}
+
+nav a:active {
+  color: #00E5E0;
   text-decoration: none;
 }
 
@@ -74,6 +88,7 @@ nav a:hover {
 
 .col-md-6 {
  text-align: center;
+ padding-top: 5px;
 }
 
 .col-md-6:nth-child(2) {
@@ -102,9 +117,16 @@ nav a:hover {
 
 /*Contact*/ 
 form {
-  width: 50%;
   font-size: 1.414em;
   padding-bottom: 15px;
+}
+
+.form-control {
+  width: 50%;   
+}
+
+.form-control:focus {
+  background-color: lightcyan;    
 }
 
 /*Queries*/
@@ -112,16 +134,20 @@ form {
   .brand {
     font-size: 1.414em;
     margin-right: -5px;
-    left: 5px;
   }
     
   .nav-item {
     font-size: 1em;
     margin-right: -5px;
   }
-    
+        
   .col-md-6:nth-child(2) {
-    border: none;  
+    border-left: none;
+    border-top: 2px solid black;
+  }
+    
+  .form-control {
+    width: 100%;   
   }
 }
 
@@ -138,20 +164,25 @@ form {
   }
     
   .card-text {
-    font-size: 0.9em; 
+    font-size: 0.85em; 
     width: 110%;
   }
     
   a.btn-primary {
     width: 125%;
     font-size: 0.707em;
-    float: left;
+    float: right;
     margin-bottom: 10px;
     padding-left: 10px;
   }
-
+    
   .col-md-6:nth-child(2) {
-    border: none;  
+    border-left: none;
+    border-top: 2px solid black;
+  }
+    
+  .form-control {
+    width: 100%;   
   }
 }
 
@@ -163,5 +194,9 @@ form {
   a.btn-primary {
     float: right;
     margin-bottom: 10px;
+  }
+    
+  .form-control {
+    width: 75%;   
   }
 }
